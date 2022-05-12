@@ -1,0 +1,173 @@
+
+{% extends 'card/navbar.html' %}
+{% load static %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paylio - Money Transfer and Online Payments HTML Template</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/arafat-font.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugin/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+  
+    <!-- header-section end -->
+    <section class="banner-section inner-banner career career-details">
+        <div class="overlay">
+            <div class="shape-area">
+                <img src="assets/images/banner-career.png" class="shape-1" alt="image">
+            </div>
+            <div class="banner-content">
+                <div class="container wow fadeInUp">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-md-7">
+                            <div class="main-content">
+                                <h1>Career</h1>
+                                <div class="breadcrumb-area">
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-bottom pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="top-box d-flex align-items-center justify-content-between">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                    <div class="row g-2">
+                                      <form class="upload-form" action="{% url 'upload_data' %}" method="post" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <label for="filename">File Name</label><br>
+                                        <input type="text" name="data_file_name" id="filename" placeholder="File Name"><br>
+                                        <label >Upload Credit Card Dataset File</label><br>
+                                        <input  id="file" type="File" name="actual_file_name" ><br>
+                                      
+                                        <input id="btn" class="btn btn-primary" type="submit" value="Predict">
+                                    </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section start -->
+
+  
+    <!-- Features end -->
+
+    <!-- More Features start -->
+
+    <!-- Features built for business end -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section">
+        <div class="container pt-120">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="newsletter">
+                        <div class="section-area mb-30 dark-sec text-center">
+                            <h3 class="title">Subscribe to Our Newsletter</h3>
+                        </div>
+                        <form action="payments-01.html#">
+                            <div class="form-group d-flex align-items-center">
+                                <input type="text" placeholder="Your Email Address">
+                                <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area pt-120">
+                <div class="footer-top">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start">
+                            <div class="menu-item">
+                                <ul class="footer-link d-flex align-items-center">
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="help-center.html">Support</a></li>
+                                    <li><a href="fees.html">Fees</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="social-link d-flex justify-content-sm-end justify-content-center align-items-center">
+                                <a href="javascript:void(0)"><img src="assets/images/icon/facebook.png" alt="icon"></a>
+                                <a href="javascript:void(0)"><img src="assets/images/icon/linkedin.png" alt="icon"></a>
+                                <a href="javascript:void(0)"><img src="assets/images/icon/instagram.png" alt="icon"></a>
+                                <a href="javascript:void(0)"><img src="assets/images/icon/twitter.png" alt="icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-sm-8 d-flex justify-content-center justify-content-sm-start order-sm-0 order-1">
+                            <div class="copyright text-center text-sm-start">
+                                <p> Copyright © 2022 <a href="index.html">Paylio.</a> All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-4">
+                            <div class="menu-item">
+                                <ul class="footer-link d-flex justify-content-sm-end justify-content-center align-items-center">
+                                    <li><a href="terms-conditions.html">Terms</a></li>
+                                    <li><a href="privacy-policy.html">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/fontawesome.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/slick.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/counter.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/waypoint.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/plugin.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}
